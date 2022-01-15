@@ -4,6 +4,8 @@ import argparse
 import json
 import logging
 import sys
+sys.path.append('/Users/amdixit/Documents/GitHub/amdixit/Hummingbird')
+
 from builtins import input
 from pprint import pformat
 
@@ -13,7 +15,6 @@ from Hummingbird.hummingbird_utils import DOWNSAMPLE, PROFILING, PLATFORM, Predi
     cost_efficiency
 from Hummingbird.instance import Instance, GCPInstance
 from Hummingbird.profiler import Profiler
-
 
 def main():
     """The main pipeline."""
