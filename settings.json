@@ -1,0 +1,4 @@
+{
+    // to fix 'Timeout waiting for debugger connections'
+    "python.terminal.activateEnvironment": false
+}
