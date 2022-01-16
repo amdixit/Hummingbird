@@ -92,6 +92,7 @@ class Profiler(object):
                     total = 0.0
                     for t in range(tries):
                         obj = self.client.get_object(Bucket=bucket_name, Key=dir_prefix + 'try' + str(t) + '.txt')
+                        print(obj['Body'].read())
                         value = json.loads(obj['Body'].read())
                         print(t, value)
                         total += value

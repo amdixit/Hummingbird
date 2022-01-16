@@ -23,7 +23,7 @@
       "image": "cloudhummingbird/bwa:1.0",
       "result": "result_test/bwa",
       "thread": [
-        4
+        8
       ],
       "input-recursive": {
         "REF": "Reference_GRCh37"
