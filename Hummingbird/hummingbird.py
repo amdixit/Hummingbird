@@ -6,7 +6,7 @@ import argparse
 import json
 import logging
 import sys
-sys.path.append('/Users/amdixit/Documents/GitHub/amdixit/Hummingbird')
+sys.path.append('/Users/Amit.Dixit/Documents/GitHub/stanford/Hummingbird')
 
 from builtins import input
 from pprint import pformat
