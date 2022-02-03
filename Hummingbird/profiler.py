@@ -95,7 +95,7 @@ class Profiler(object):
                         print(obj['Body'].read())
                         value = json.loads(obj['Body'].read())
                         print(t, value)
-                        total += value
+                        total += value  
                     profiling_dict['script'][entry_count].append(total / tries)
             return profiling_dict
         elif self.service == 'azure':

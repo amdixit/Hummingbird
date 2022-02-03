@@ -3,7 +3,7 @@
     "service": "aws",
     "project": "351869726285",
     "regions": "us-east-2",
-    "bucket": "hb-ad",
+    "bucket": "hummingbird-fastq-novaseq-wgs-pcr-free",
     "cloudformation_stack_name": "humm-stack"
   },
   "Downsample": {
@@ -16,14 +16,15 @@
       0.0001,0.001,0.01
     ],
     "output": "downsampled_test",
-    "fullrun": false
+    "fullrun": false,
+    "disk": "750"
   },
   "Profiling": [
     {
       "image": "cloudhummingbird/bwa:1.0",
       "result": "result_test/bwa",
       "thread": [
-        8
+        2
       ],
       "input-recursive": {
         "REF": "Reference_GRCh37"
@@ -33,9 +34,8 @@
         "OUTPUT_SAM": "output_test/bwa/output.sam"
       },
       "force": false,
-      "disk": "200",
+      "disk": "750",
       "tries": 3
     }
   ]
 }
-
